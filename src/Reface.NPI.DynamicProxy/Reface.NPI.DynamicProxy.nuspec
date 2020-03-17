@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>Reface.NPI.DynamicProxy</id>
+    <version>1.0.1</version>
+    <title>Reface.NPI.DynamicProxy</title>
+    <authors>ShimizuShiori</authors>
+    <owners>ShimizuShiori</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/ShimizuShiori/Reface.NPI.DynamicProxy</projectUrl>
+    <description>分析接口名称生成 Sql 并执行的 Orm 库</description>
+    <copyright>Copyright 2020</copyright>
+    <tags>ORM</tags>
+  </metadata>
+</package>
