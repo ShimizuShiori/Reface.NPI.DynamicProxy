@@ -19,16 +19,22 @@ IDbConnection 和 IDbTrancation 由上层提供，本库不对数据库连接和
 
 ## 3 使用
 
-### 3.1 创建 Entity
+### 3.1 Nuget 引用
+
+```cd
+PM> Install-Package Reface.NPI.DynamicProxy -Version 1.0.1
+```
+
+### 3.2 创建 Entity
 
 对类型加上 [Table] ，这个标签来源于 **System.ComponentModel.DataAnnotations.Schema**
 
-### 3.2 创建 Dao 接口
+### 3.3 创建 Dao 接口
 
 该接口需要继承于 *INpiDao&lt;TEntity&gt;* ,
 并根据 [Reface.NPI] 中的规范编写方法名称,
 
-### 3.3 创建 Dao 代理类
+### 3.4 创建 Dao 代理类
 
 ```csharp
 // DbConnectionContext 中包含数据库连接和事务
