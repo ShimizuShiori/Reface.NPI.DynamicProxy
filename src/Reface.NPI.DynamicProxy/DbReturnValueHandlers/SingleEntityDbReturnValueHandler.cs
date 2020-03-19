@@ -13,7 +13,9 @@ namespace Reface.NPI.DynamicProxy.DbReturnValueHandlers
 
         public object Handle(MethodInfo methodInfo, Type entityType, object dbReturnedValue)
         {
+            if (dbReturnedValue == null) return null;
             var list = (IList)dbReturnedValue;
+            if (list.Count == 0) return null;
             var first = list[0];
             return first;
         }

@@ -10,7 +10,10 @@ namespace Reface.NPI.DynamicProxy.DbReturnValueHandlers
         public bool CanHandle(MethodInfo methodInfo, Type entityType)
         {
             Type returnType = methodInfo.ReturnType;
-            return returnType.GetInterface(typeof(IList).FullName) != null;
+            Type targetType = typeof(IList<>).MakeGenericType(new Type[] { entityType });
+            if (returnType == targetType) return true;
+            bool canHandle = returnType.GetInterface(targetType.FullName) != null;
+            return canHandle;
         }
 
         public object Handle(MethodInfo methodInfo, Type entityType, object dbReturnedValue)

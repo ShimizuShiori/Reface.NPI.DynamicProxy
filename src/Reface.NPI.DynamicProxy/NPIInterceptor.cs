@@ -32,7 +32,7 @@ namespace Reface.NPI.DynamicProxy
             // todo :对其单例化
             ISqlCommandGenerator g = NpiServicesCollection.GetService<ISqlServerCommandGenerator>();
             SqlCommandDescription d = g.Generate(invocation.Method, invocation.Arguments);
-
+            DebugLogger.Debug(d.ToString());
 
             DapperParameters dp = new DapperParameters();
             foreach (var p in d.Parameters)
@@ -68,23 +68,6 @@ namespace Reface.NPI.DynamicProxy
                 handledValue = handler.Handle(invocation.Method, entityType, dbReturnedValue);
             }
             invocation.ReturnValue = handledValue;
-
-            //var list = this.dbConnectionContext.DbConnection.Query(entityType, d.SqlCommand, dp, transaction: dbConnectionContext.Transaction).AsList();
-
-            //// todo : 支持更多的返回类型
-            //// 如果可以的话，使用动态 Linq 返回数据
-
-
-            //object result = Activator.CreateInstance(invocation.Method.ReturnType);
-            //if (result is IList)
-            //{
-            //    foreach (var x in list)
-            //        ((IList)result).Add(x);
-            //}
-
-            //invocation.ReturnValue = result;
-
-
         }
     }
 }

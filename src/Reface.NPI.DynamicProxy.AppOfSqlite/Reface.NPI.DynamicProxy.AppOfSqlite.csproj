@@ -46,7 +46,7 @@
       <HintPath>..\Reface.NPI.DynamicProxy\packages\Reface.1.0.1\lib\netstandard2.0\Reface.dll</HintPath>
     </Reference>
     <Reference Include="Reface.NPI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\Reface.NPI.DynamicProxy\packages\Reface.NPI.1.1.0\lib\net461\Reface.NPI.dll</HintPath>
+      <HintPath>..\Reface.NPI.DynamicProxy\packages\Reface.NPI.1.1.2-alpha.2\lib\net461\Reface.NPI.dll</HintPath>
     </Reference>
     <Reference Include="Reface.StateMachine, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\Reface.NPI.DynamicProxy\packages\Reface.StateMachine.1.1.0\lib\net461\Reface.StateMachine.dll</HintPath>
@@ -71,10 +71,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Checker.cs" />
+    <Compile Include="CheckException.cs" />
     <Compile Include="Daos\IUserDao.cs" />
     <Compile Include="Entities\User.cs" />
+    <Compile Include="ITask.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tasks\InsertAndDeleteTask.cs" />
+    <Compile Include="Tasks\InsertAndDoSomeTask.cs" />
+    <Compile Include="Tasks\InsertAndSelectTask.cs" />
+    <Compile Include="Tasks\InsertAndUpdateTask.cs" />
+    <Compile Include="Tasks\InTask.cs" />
+    <Compile Include="Tasks\OrderbyTask.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
