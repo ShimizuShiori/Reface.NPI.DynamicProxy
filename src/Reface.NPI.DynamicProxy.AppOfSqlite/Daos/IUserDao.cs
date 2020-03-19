@@ -20,7 +20,5 @@ namespace Reface.NPI.DynamicProxy.AppOfSqlite.Daos
         IList<User> SelectOrderbyIdDesc();
 
         IList<User> GetOrderbyId();
-
-        IList<User> SelectByIdIn(string[] idList);
     }
 }

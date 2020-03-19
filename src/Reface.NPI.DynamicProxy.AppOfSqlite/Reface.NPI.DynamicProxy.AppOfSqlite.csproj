@@ -46,7 +46,7 @@
       <HintPath>..\Reface.NPI.DynamicProxy\packages\Reface.1.0.1\lib\netstandard2.0\Reface.dll</HintPath>
     </Reference>
     <Reference Include="Reface.NPI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\Reface.NPI.DynamicProxy\packages\Reface.NPI.1.1.2-alpha.3\lib\net461\Reface.NPI.dll</HintPath>
+      <HintPath>..\Reface.NPI.DynamicProxy\packages\Reface.NPI.1.1.2-alpha.4\lib\net461\Reface.NPI.dll</HintPath>
     </Reference>
     <Reference Include="Reface.StateMachine, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\Reface.NPI.DynamicProxy\packages\Reface.StateMachine.1.1.0\lib\net461\Reface.StateMachine.dll</HintPath>
@@ -82,7 +82,6 @@
     <Compile Include="Tasks\InsertAndDoSomeTask.cs" />
     <Compile Include="Tasks\InsertAndSelectTask.cs" />
     <Compile Include="Tasks\InsertAndUpdateTask.cs" />
-    <Compile Include="Tasks\InTask.cs" />
     <Compile Include="Tasks\OrderbyTask.cs" />
   </ItemGroup>
   <ItemGroup>
