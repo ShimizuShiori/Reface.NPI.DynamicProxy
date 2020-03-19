@@ -91,9 +91,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />
-    <None Include="Resources\StateMachines\Delete.csv" />
-    <None Include="Resources\StateMachines\Select.csv" />
-    <None Include="Resources\StateMachines\Update.csv" />
+    <Content Include="Resources\StateMachines\Delete.csv" />
+    <Content Include="Resources\StateMachines\Select.csv" />
+    <Content Include="Resources\StateMachines\Update.csv" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Reface.NPI.DynamicProxy\Reface.NPI.DynamicProxy.csproj">

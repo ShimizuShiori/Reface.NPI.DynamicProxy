@@ -91,9 +91,9 @@
   <ItemGroup>
     <None Include="packages.config" />
     <None Include="Reface.NPI.DynamicProxy.nuspec" />
-    <None Include="Resources\StateMachines\Delete.csv" />
-    <None Include="Resources\StateMachines\Select.csv" />
-    <None Include="Resources\StateMachines\Update.csv" />
+    <Content Include="Resources\StateMachines\Delete.csv" />
+    <Content Include="Resources\StateMachines\Select.csv" />
+    <Content Include="Resources\StateMachines\Update.csv" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\OperatorMappings\SqlServer.xml" />
