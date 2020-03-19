@@ -91,9 +91,15 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />
-    <Content Include="Resources\StateMachines\Delete.csv" />
-    <Content Include="Resources\StateMachines\Select.csv" />
-    <Content Include="Resources\StateMachines\Update.csv" />
+    <Content Include="Resources\StateMachines\Delete.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\StateMachines\Select.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\StateMachines\Update.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Reface.NPI.DynamicProxy\Reface.NPI.DynamicProxy.csproj">
@@ -102,7 +108,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\OperatorMappings\SqlServer.xml" />
+    <Content Include="Resources\OperatorMappings\SqlServer.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
