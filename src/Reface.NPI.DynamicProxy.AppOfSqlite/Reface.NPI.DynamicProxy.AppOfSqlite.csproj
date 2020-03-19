@@ -46,7 +46,7 @@
       <HintPath>..\Reface.NPI.DynamicProxy\packages\Reface.1.0.1\lib\netstandard2.0\Reface.dll</HintPath>
     </Reference>
     <Reference Include="Reface.NPI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\Reface.NPI.DynamicProxy\packages\Reface.NPI.1.1.2-alpha.2\lib\net461\Reface.NPI.dll</HintPath>
+      <HintPath>..\Reface.NPI.DynamicProxy\packages\Reface.NPI.1.1.2-alpha.3\lib\net461\Reface.NPI.dll</HintPath>
     </Reference>
     <Reference Include="Reface.StateMachine, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\Reface.NPI.DynamicProxy\packages\Reface.StateMachine.1.1.0\lib\net461\Reface.StateMachine.dll</HintPath>
@@ -91,15 +91,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />
-    <None Include="Resources\StateMachines\Delete.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Resources\StateMachines\Select.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Resources\StateMachines\Update.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    <None Include="Resources\StateMachines\Delete.csv" />
+    <None Include="Resources\StateMachines\Select.csv" />
+    <None Include="Resources\StateMachines\Update.csv" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Reface.NPI.DynamicProxy\Reface.NPI.DynamicProxy.csproj">
@@ -108,9 +102,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\OperatorMappings\SqlServer.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Content Include="Resources\OperatorMappings\SqlServer.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
