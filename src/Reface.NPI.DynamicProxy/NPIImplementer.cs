@@ -1,12 +1,12 @@
 ﻿using Castle.DynamicProxy;
 
-namespace Reface.NPI.DynamicProxy.SqlServer
+namespace Reface.NPI.DynamicProxy
 {
-    public class SqlServerNPIImplementer : INPIImplementer
+    public class NPIImplementer : INPIImplementer
     {
         private readonly DbConnectionContext dbConnectionContext;
 
-        public SqlServerNPIImplementer(DbConnectionContext dbConnectionContext)
+        public NPIImplementer(DbConnectionContext dbConnectionContext)
         {
             this.dbConnectionContext = dbConnectionContext;
         }

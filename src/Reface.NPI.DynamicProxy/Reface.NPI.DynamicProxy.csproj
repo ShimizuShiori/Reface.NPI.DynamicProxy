@@ -82,10 +82,10 @@
     <Compile Include="IDbReturnValueHandler.cs" />
     <Compile Include="ISqlCommandExecutor.cs" />
     <Compile Include="ISqlCommandQuerier.cs" />
-    <Compile Include="ServicesCollection.cs" />
-    <Compile Include="SqlServer\SqlServerNPIImplementer.cs" />
-    <Compile Include="INPIImplementer.cs" />
     <Compile Include="NPIInterceptor.cs" />
+    <Compile Include="ServicesCollection.cs" />
+    <Compile Include="NPIImplementer.cs" />
+    <Compile Include="INPIImplementer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
