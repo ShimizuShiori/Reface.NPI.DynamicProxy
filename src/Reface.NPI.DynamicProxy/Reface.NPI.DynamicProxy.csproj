@@ -83,7 +83,7 @@
     <Compile Include="ISqlCommandExecutor.cs" />
     <Compile Include="ISqlCommandQuerier.cs" />
     <Compile Include="ServicesCollection.cs" />
-    <Compile Include="SqlServerNPIImplementer.cs" />
+    <Compile Include="SqlServer\SqlServerNPIImplementer.cs" />
     <Compile Include="INPIImplementer.cs" />
     <Compile Include="NPIInterceptor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

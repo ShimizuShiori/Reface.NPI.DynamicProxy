@@ -1,6 +1,6 @@
 ﻿using Castle.DynamicProxy;
 
-namespace Reface.NPI.DynamicProxy
+namespace Reface.NPI.DynamicProxy.SqlServer
 {
     public class SqlServerNPIImplementer : INPIImplementer
     {
