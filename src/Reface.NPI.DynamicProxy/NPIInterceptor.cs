@@ -43,6 +43,8 @@ namespace Reface.NPI.DynamicProxy
             object dbReturnedValue = null;
             object handledValue = null;
 
+            DebugLogger.Debug("准备执行 Sql");
+
             switch (d.Type)
             {
                 case SqlCommandTypes.Insert:
@@ -62,12 +64,14 @@ namespace Reface.NPI.DynamicProxy
                 default:
                     break;
             }
+            DebugLogger.Debug("Sql 执行完毕，开始处理结果集");
             foreach (var handler in dbReturnValueHandlers)
             {
                 if (!handler.CanHandle(invocation.Method, entityType)) continue;
                 handledValue = handler.Handle(invocation.Method, entityType, dbReturnedValue);
             }
             invocation.ReturnValue = handledValue;
+            DebugLogger.Debug("结果集处理完毕");
         }
     }
 }

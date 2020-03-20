@@ -58,6 +58,7 @@ namespace Reface.NPI.DynamicProxy.AppOfSqlite
                 foreach (var task in tasks)
                 {
                     Console.Write("{0} : ", task.TaskName);
+                    DebugLogger.Debug($"开始任务 : {task.TaskName}");
                     DateTime d1 = DateTime.Now;
                     try
                     {
