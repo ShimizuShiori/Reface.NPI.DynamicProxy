@@ -37,24 +37,6 @@ namespace Reface.NPI.DynamicProxy.AppOfSqlite
 
                 userDao.Delete();
 
-
-                //using (var cmd = conn.CreateCommand())
-                //{
-                //    cmd.CommandText = "select * from t_user where id in @ids";
-                //    var ps = cmd.CreateParameter();
-                //    ps.ParameterName = "ids";
-                //    ps.Value = new string[] { "1", "2" };
-                //    cmd.Parameters.Add(ps);
-                //    using (var reader = cmd.ExecuteReader())
-                //    {
-                //        while (reader.Read())
-                //        {
-                //            Console.WriteLine(reader[0].ToString());
-                //        }
-                //    }
-                //}
-
-
                 foreach (var task in tasks)
                 {
                     Console.Write("{0} : ", task.TaskName);
