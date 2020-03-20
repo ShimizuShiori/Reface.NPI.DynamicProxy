@@ -43,10 +43,10 @@
       <HintPath>..\Reface.NPI.DynamicProxy\packages\EntityFramework.6.3.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Reface, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\Reface.NPI.DynamicProxy\packages\Reface.1.0.1\lib\netstandard2.0\Reface.dll</HintPath>
+      <HintPath>..\packages\Reface.1.1.0\lib\netstandard2.0\Reface.dll</HintPath>
     </Reference>
     <Reference Include="Reface.NPI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\Reface.NPI.DynamicProxy\packages\Reface.NPI.1.1.2-alpha.4\lib\net461\Reface.NPI.dll</HintPath>
+      <HintPath>..\packages\Reface.NPI.1.1.3-alpha.1\lib\net461\Reface.NPI.dll</HintPath>
     </Reference>
     <Reference Include="Reface.StateMachine, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\Reface.NPI.DynamicProxy\packages\Reface.StateMachine.1.1.0\lib\net461\Reface.StateMachine.dll</HintPath>
