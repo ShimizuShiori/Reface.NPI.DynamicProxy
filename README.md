@@ -45,6 +45,10 @@ IUserDao dao = imper.Implement<IUserDao>();
 var books = dao.SelectById(1);
 ```
 
+---
+
+**Reface.NPI.DynamicProxy.AppOfSqlite** 项目是基于 Sqlite 的一个演示项目
+
 [Dapper]: https://github.com/StackExchange/Dapper
 [Reface.NPI]: https://github.com/ShimizuShiori/Reface.NPI
 [Castle.DynamicProxy]: http://www.castleproject.org/

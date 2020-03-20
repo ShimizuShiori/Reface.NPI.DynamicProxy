@@ -12,10 +12,14 @@ namespace Reface.NPI.DynamicProxy.AppOfSqlite.Tasks
         {
             DbConnectionContext ctx = (DbConnectionContext)context[Constant.CONTEXT_KEY_DB_CONTEXT];
 
-            ctx.BeginTran();
             User user = User.New();
-            userDao.Insert(user);
-            ctx.Commit();
+            using (var tran = ctx.DbConnection.BeginTransaction())
+            {
+                ctx.Transaction = tran;
+                userDao.Insert(user);
+                tran.Commit();
+                ctx.Transaction = null;
+            }
 
             User user2 = userDao.SelectById(user.Id);
             Checker.IsNotNull(user2);
