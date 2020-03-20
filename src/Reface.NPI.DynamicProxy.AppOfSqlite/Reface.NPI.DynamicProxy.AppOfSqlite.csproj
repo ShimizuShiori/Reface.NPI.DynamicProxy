@@ -84,6 +84,7 @@
     <Compile Include="Tasks\InsertAndSelectTask.cs" />
     <Compile Include="Tasks\InsertAndUpdateTask.cs" />
     <Compile Include="Tasks\OrderbyTask.cs" />
+    <Compile Include="Tasks\TranInsertAndCommitTask.cs" />
     <Compile Include="Tasks\TranInsertAndRollackTask.cs" />
   </ItemGroup>
   <ItemGroup>
