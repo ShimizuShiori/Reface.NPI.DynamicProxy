@@ -37,12 +37,21 @@ PM> Install-Package Reface.NPI.DynamicProxy -Version 1.0.1
 ### 3.4 创建 Dao 代理类
 
 ```csharp
-// DbConnectionContext 中包含数据库连接和事务
-// 上层可以管理连接和事务
-// 代理类中不对连接和事务管理
-INPIImplementer imper = new SqlServerNPIImplementer(new DbConnectionContext(conn));
-IUserDao dao = imper.Implement<IUserDao>();
-var books = dao.SelectById(1);
+// IUserDao.cs
+interface IUserDao
+{
+    User SelectById(int id); // 只需要编写方法，不需要实现
+}
+```
+
+```csharp
+// DbConnectionContext 中包含数据库连接
+// 上层可以管理连接
+// 代理类中不对连接管理
+DbConnectionContext ctx = new DbConnectionContext(conn);
+INPIImplementer imper = new NPIImplementer(ctx);
+IUserDao dao = imper.Implement<IUserDao>();  // 该方法会动态生成 IUserDao 的实现类
+var user = dao.SelectById(1);
 ```
 
 ---
