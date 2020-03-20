@@ -1,5 +1,4 @@
 ﻿using Reface.NPI.DynamicProxy.AppOfSqlite.Daos;
-using Reface.NPI.DynamicProxy.AppOfSqlite.Entities;
 using System;
 using System.Collections.Generic;
 using System.Data.SQLite;
