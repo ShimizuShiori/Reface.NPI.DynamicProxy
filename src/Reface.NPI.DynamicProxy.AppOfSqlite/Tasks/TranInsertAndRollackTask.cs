@@ -1,6 +1,5 @@
 ﻿using Reface.NPI.DynamicProxy.AppOfSqlite.Daos;
 using Reface.NPI.DynamicProxy.AppOfSqlite.Entities;
-using System;
 using System.Collections.Generic;
 
 namespace Reface.NPI.DynamicProxy.AppOfSqlite.Tasks
@@ -15,10 +14,8 @@ namespace Reface.NPI.DynamicProxy.AppOfSqlite.Tasks
             User user = User.New();
             using (var tran = ctx.DbConnection.BeginTransaction())
             {
-                ctx.Transaction = tran;
                 userDao.Insert(user);
                 tran.Rollback();
-                ctx.Transaction = null;
             }
 
             User user2 = userDao.SelectById(user.Id);
