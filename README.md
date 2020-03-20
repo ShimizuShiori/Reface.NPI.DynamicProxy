@@ -41,6 +41,12 @@ PM> Install-Package Reface.NPI.DynamicProxy -Version 1.0.1
 interface IUserDao
 {
     User SelectById(int id); // 只需要编写方法，不需要实现
+    void UpdateLoginnameById(string loginName, int id);
+    bool UpdatePasswordById(string password, int id);
+    void DeleteById(int id);
+    bool DeleteByLoginname(string loginName);
+    void Insert(User user);
+    IList<User> SelectByNameLike(string name);
 }
 ```
 
