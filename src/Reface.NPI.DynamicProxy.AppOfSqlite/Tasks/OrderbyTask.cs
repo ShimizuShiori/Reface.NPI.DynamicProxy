@@ -8,6 +8,8 @@ namespace Reface.NPI.DynamicProxy.AppOfSqlite.Tasks
     {
         public string TaskName => "排序任务";
 
+        public bool NeedTran => false;
+
         public void DoTask(IUserDao userDao, Dictionary<string, object> context)
         {
             userDao.Delete();

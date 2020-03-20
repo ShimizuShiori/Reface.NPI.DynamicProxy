@@ -9,6 +9,8 @@ namespace Reface.NPI.DynamicProxy.AppOfSqlite.Tasks
     {
         public abstract string TaskName { get; }
 
+        public virtual bool NeedTran => false;
+
         public void DoTask(IUserDao userDao, Dictionary<string, object> context)
         {
             User user = new User()

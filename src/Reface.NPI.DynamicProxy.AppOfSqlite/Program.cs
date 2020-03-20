@@ -33,6 +33,7 @@ namespace Reface.NPI.DynamicProxy.AppOfSqlite
                 IUserDao userDao = implementer.Implement<IUserDao>();
 
                 Dictionary<string, object> context = new Dictionary<string, object>();
+                context[Constant.CONTEXT_KEY_DB_CONTEXT] = ctx;
 
                 userDao.Delete();
 

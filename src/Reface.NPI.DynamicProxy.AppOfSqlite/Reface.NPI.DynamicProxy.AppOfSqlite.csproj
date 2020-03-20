@@ -73,6 +73,7 @@
   <ItemGroup>
     <Compile Include="Checker.cs" />
     <Compile Include="CheckException.cs" />
+    <Compile Include="Constant.cs" />
     <Compile Include="Daos\IUserDao.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="ITask.cs" />
@@ -83,6 +84,7 @@
     <Compile Include="Tasks\InsertAndSelectTask.cs" />
     <Compile Include="Tasks\InsertAndUpdateTask.cs" />
     <Compile Include="Tasks\OrderbyTask.cs" />
+    <Compile Include="Tasks\TranInsertAndRollackTask.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

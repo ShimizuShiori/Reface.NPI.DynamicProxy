@@ -20,5 +20,24 @@ namespace Reface.NPI.DynamicProxy
         {
 
         }
+
+        public void BeginTran()
+        {
+            this.Transaction = this.DbConnection.BeginTransaction();
+        }
+
+        public void Rollback()
+        {
+            this.Transaction.Rollback();
+            this.Transaction.Dispose();
+            this.Transaction = null;
+        }
+
+        public void Commit()
+        {
+            this.Transaction.Commit();
+            this.Transaction.Dispose();
+            this.Transaction = null;
+        }
     }
 }
